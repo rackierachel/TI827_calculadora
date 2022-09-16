@@ -4,7 +4,7 @@ package calculator;
 import java.util.Scanner;
 
 
-public class Calculator {
+public class calculator {
     
     
     public static Scanner ler = new Scanner(System.in);
@@ -19,6 +19,7 @@ public class Calculator {
                     System.out.println("* -> Multiplicação ");
                     System.out.println("/ -> Divisão");
                     System.out.println("e -> Expoente");
+                    System.out.println("i- -> IMC");
                     System.out.println("s -> Sair");
                     System.out.println("S -> Selecione Operador");
                     op = ler.next().charAt(0); // ler operador
@@ -31,6 +32,7 @@ public class Calculator {
                         case '/': Divide.dividir();break;
                         case 'E':
                         case 'e': Expoente.potencia();break;
+                        case 'i': IMC.calculaIMC();break;
                         default: System.out.println("Operador incorreto");
                               
                     }
