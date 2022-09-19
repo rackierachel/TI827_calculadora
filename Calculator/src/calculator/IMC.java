@@ -6,7 +6,7 @@ public class IMC {
     static void calculaIMC() {
         float imc;
     LerDados r = new LerDados();
-    r.lerValores();
+    r.lerValores ("Insira peso em kg","Insira valor: ");
 
          
         imc = r.valor1/(r.valor2*r.valor2); 
@@ -22,5 +22,4 @@ public class IMC {
             System.out.println("Obesidade Grau II"); 
         else if (imc >40) 
             System.out.println("Obesidade Grau III"); 
-        else 
-            System.out.print("Valores inválidos");
+       
