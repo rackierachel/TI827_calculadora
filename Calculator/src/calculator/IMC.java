@@ -20,6 +20,7 @@ public class IMC {
             System.out.println("Obesidade Grau I"); 
         else if (imc >=35 && imc <=39.9) 
             System.out.println("Obesidade Grau II"); 
-        else if (imc >40) 
+        else if(imc >40) 
             System.out.println("Obesidade Grau III"); 
-       
+    }
+}
